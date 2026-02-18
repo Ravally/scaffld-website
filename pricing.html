@@ -258,6 +258,51 @@ img{max-width:100%;display:block}a{text-decoration:none;color:inherit}button{cur
   color: var(--muted);
 }
 
+/* Coming Soon badge */
+.coming-soon-badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-data);
+  font-size: 0.52rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: rgba(107,127,150,0.1);
+  padding: 3px 8px;
+  border-radius: 100px;
+  font-weight: 500;
+  margin-left: 6px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.pricing-card.featured .coming-soon-badge {
+  background: rgba(163,180,200,0.15);
+  color: var(--silver);
+}
+.pricing-early-access {
+  font-family: var(--font-data);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--coral);
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0,0,0,0.06);
+}
+.pricing-card.featured .pricing-early-access {
+  border-color: rgba(255,255,255,0.06);
+}
+.pricing-early-access-note {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 0.75rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.pricing-card.featured .pricing-early-access-note {
+  color: var(--silver);
+}
+
 /* ============================================
    COMPARISON TABLE
    ============================================ */
@@ -482,6 +527,11 @@ img{max-width:100%;display:block}a{text-decoration:none;color:inherit}button{cur
           <li><span class="pricing-check teal">✓</span>Mobile app access</li>
           <li><span class="pricing-check teal">✓</span>Online payments</li>
           <li><span class="pricing-check teal">✓</span>Client Hub portal</li>
+          <li><span class="pricing-check teal">✓</span>GPS time tracking</li>
+          <li><span class="pricing-check teal">✓</span>Email templates</li>
+          <li><span class="pricing-check teal">✓</span>Push notifications</li>
+          <li><span class="pricing-check teal">✓</span>Offline mode</li>
+          <li><span class="pricing-check teal">✓</span>Sequential invoicing</li>
           <li class="disabled"><span class="pricing-check">—</span>Team scheduling & dispatch</li>
           <li class="disabled"><span class="pricing-check">—</span>Automated follow-ups</li>
         </ul>
@@ -503,12 +553,18 @@ img{max-width:100%;display:block}a{text-decoration:none;color:inherit}button{cur
           <li><span class="pricing-check teal">✓</span>Up to 15 users</li>
           <li><span class="pricing-check teal">✓</span>Everything in Starter</li>
           <li><span class="pricing-check teal">✓</span>Team scheduling & dispatch</li>
-          <li><span class="pricing-check teal">✓</span>Route optimization</li>
+          <li><span class="pricing-check teal">✓</span>Route planning</li>
           <li><span class="pricing-check teal">✓</span>Automated quote follow-ups</li>
           <li><span class="pricing-check teal">✓</span>Job forms & checklists</li>
-          <li><span class="pricing-check teal">✓</span>QuickBooks Online sync</li>
+          <li><span class="pricing-check teal">✓</span>Geofencing & site alerts</li>
+          <li><span class="pricing-check teal">✓</span>Photo markup & annotations</li>
+          <li><span class="pricing-check teal">✓</span>Email campaigns</li>
+          <li><span class="pricing-check teal">✓</span>Online booking page</li>
+          <li><span class="pricing-check teal">✓</span>Review requests</li>
           <li><span class="pricing-check teal">✓</span>Expense tracking</li>
-          <li><span class="pricing-check teal">✓</span>Scaffld AI (basic)</li>
+          <li><span class="pricing-check teal">✓</span>Payment plans</li>
+          <li><span class="pricing-check teal">✓</span>Payroll export</li>
+          <li><span class="pricing-check teal">✓</span>QuickBooks sync <span class="coming-soon-badge">Coming Soon</span></li>
         </ul>
         <a href="https://my.scaffld.app/signup" class="btn btn-primary btn-full btn-arrow">Start Free Trial </a>
       </div>
@@ -516,7 +572,7 @@ img{max-width:100%;display:block}a{text-decoration:none;color:inherit}button{cur
       <!-- SCALE -->
       <div class="pricing-card reveal reveal-delay-2">
         <div class="pricing-name">Scale</div>
-        <div class="pricing-desc">For established businesses ready to dominate.</div>
+        <div class="pricing-desc">For established businesses that need the full platform.</div>
         <div class="pricing-price">
           <span class="pricing-currency">$</span>
           <span class="pricing-amount" data-monthly="149" data-annual="119">149</span>
@@ -526,15 +582,20 @@ img{max-width:100%;display:block}a{text-decoration:none;color:inherit}button{cur
         <ul class="pricing-features">
           <li><span class="pricing-check teal">✓</span>Unlimited users</li>
           <li><span class="pricing-check teal">✓</span>Everything in Grow</li>
-          <li><span class="pricing-check teal">✓</span>Scaffld AI Receptionist (24/7)</li>
-          <li><span class="pricing-check teal">✓</span>AI Voice commands</li>
-          <li><span class="pricing-check teal">✓</span>Marketing Suite (reviews, campaigns, referrals)</li>
-          <li><span class="pricing-check teal">✓</span>Website builder</li>
-          <li><span class="pricing-check teal">✓</span>Revenue heatmaps & insights dashboard</li>
-          <li><span class="pricing-check teal">✓</span>GPS fleet tracking</li>
+          <li><span class="pricing-check teal">✓</span>Marketing Suite (reviews + campaigns)</li>
           <li><span class="pricing-check teal">✓</span>Priority support</li>
+          <li><span class="pricing-check teal">✓</span>Advanced payroll export</li>
+          <li><span class="pricing-check teal">✓</span>Custom branding</li>
+          <li><span class="pricing-check teal">✓</span>Bulk operations</li>
         </ul>
-        <a href="https://my.scaffld.app/signup" class="btn btn-secondary btn-full">Start Free Trial</a>
+        <div class="pricing-early-access">Early access to new features</div>
+        <ul class="pricing-features" style="margin-top:0.75rem;margin-bottom:1rem;">
+          <li><span class="pricing-check teal">✓</span>Scaffld AI <span class="coming-soon-badge">Coming Soon</span></li>
+          <li><span class="pricing-check teal">✓</span>AI Receptionist <span class="coming-soon-badge">Coming Soon</span></li>
+          <li><span class="pricing-check teal">✓</span>GPS fleet tracking <span class="coming-soon-badge">Coming Soon</span></li>
+        </ul>
+        <p class="pricing-early-access-note">Scale members get first access to AI features as they roll out.</p>
+        <a href="https://my.scaffld.app/signup" class="btn btn-secondary btn-full" style="margin-top:1.5rem;">Start Free Trial</a>
       </div>
     </div>
   </div>
@@ -559,33 +620,43 @@ img{max-width:100%;display:block}a{text-decoration:none;color:inherit}button{cur
       <tbody>
         <tr><td class="table-group-header" colspan="4">Core</td></tr>
         <tr><td>Users included</td><td>1</td><td class="highlight">Up to 15</td><td>Unlimited</td></tr>
-        <tr><td>Quoting</td><td class="check">✓</td><td class="highlight check">✓</td><td class="check">✓</td></tr>
-        <tr><td>Invoicing</td><td class="check">✓</td><td class="highlight check">✓</td><td class="check">✓</td></tr>
+        <tr><td>Quoting & invoicing</td><td class="check">✓</td><td class="highlight check">✓</td><td class="check">✓</td></tr>
         <tr><td>Online payments</td><td class="check">✓</td><td class="highlight check">✓</td><td class="check">✓</td></tr>
         <tr><td>Client Hub portal</td><td class="check">✓</td><td class="highlight check">✓</td><td class="check">✓</td></tr>
         <tr><td>Mobile app</td><td class="check">✓</td><td class="highlight check">✓</td><td class="check">✓</td></tr>
+        <tr><td>GPS time tracking</td><td class="check">✓</td><td class="highlight check">✓</td><td class="check">✓</td></tr>
+        <tr><td>Offline mode</td><td class="check">✓</td><td class="highlight check">✓</td><td class="check">✓</td></tr>
+        <tr><td>Email templates</td><td class="check">✓</td><td class="highlight check">✓</td><td class="check">✓</td></tr>
+        <tr><td>Push notifications</td><td class="check">✓</td><td class="highlight check">✓</td><td class="check">✓</td></tr>
+        <tr><td>Sequential invoicing</td><td class="check">✓</td><td class="highlight check">✓</td><td class="check">✓</td></tr>
 
-        <tr><td class="table-group-header" colspan="4">Scheduling</td></tr>
+        <tr><td class="table-group-header" colspan="4">Scheduling & Field</td></tr>
         <tr><td>Calendar scheduling</td><td class="check">✓</td><td class="highlight check">✓</td><td class="check">✓</td></tr>
         <tr><td>Team dispatch</td><td class="dash">—</td><td class="highlight check">✓</td><td class="check">✓</td></tr>
-        <tr><td>Route optimization</td><td class="dash">—</td><td class="highlight check">✓</td><td class="check">✓</td></tr>
-        <tr><td>Online booking</td><td class="dash">—</td><td class="highlight check">✓</td><td class="check">✓</td></tr>
-        <tr><td>GPS fleet tracking</td><td class="dash">—</td><td class="dash highlight">—</td><td class="check">✓</td></tr>
-
-        <tr><td class="table-group-header" colspan="4">Automation</td></tr>
-        <tr><td>Automated reminders</td><td class="check">✓</td><td class="highlight check">✓</td><td class="check">✓</td></tr>
-        <tr><td>Quote follow-ups</td><td class="dash">—</td><td class="highlight check">✓</td><td class="check">✓</td></tr>
+        <tr><td>Route planning</td><td class="dash">—</td><td class="highlight check">✓</td><td class="check">✓</td></tr>
+        <tr><td>Online booking page</td><td class="dash">—</td><td class="highlight check">✓</td><td class="check">✓</td></tr>
+        <tr><td>Geofencing & site alerts</td><td class="dash">—</td><td class="highlight check">✓</td><td class="check">✓</td></tr>
         <tr><td>Job forms & checklists</td><td class="dash">—</td><td class="highlight check">✓</td><td class="check">✓</td></tr>
-        <tr><td>Scaffld AI (basic)</td><td class="dash">—</td><td class="highlight check">✓</td><td class="check">✓</td></tr>
-        <tr><td>AI Receptionist (24/7)</td><td class="dash">—</td><td class="dash highlight">—</td><td class="check">✓</td></tr>
-        <tr><td>AI Voice commands</td><td class="dash">—</td><td class="dash highlight">—</td><td class="check">✓</td></tr>
+        <tr><td>Photo markup</td><td class="dash">—</td><td class="highlight check">✓</td><td class="check">✓</td></tr>
 
-        <tr><td class="table-group-header" colspan="4">Growth</td></tr>
-        <tr><td>QuickBooks sync</td><td class="dash">—</td><td class="highlight check">✓</td><td class="check">✓</td></tr>
-        <tr><td>Marketing Suite</td><td class="dash">—</td><td class="dash highlight">—</td><td class="check">✓</td></tr>
-        <tr><td>Website builder</td><td class="dash">—</td><td class="dash highlight">—</td><td class="check">✓</td></tr>
-        <tr><td>Revenue heatmaps</td><td class="dash">—</td><td class="dash highlight">—</td><td class="check">✓</td></tr>
+        <tr><td class="table-group-header" colspan="4">Financial</td></tr>
         <tr><td>Expense tracking</td><td class="dash">—</td><td class="highlight check">✓</td><td class="check">✓</td></tr>
+        <tr><td>Payment plans</td><td class="dash">—</td><td class="highlight check">✓</td><td class="check">✓</td></tr>
+        <tr><td>Payroll export</td><td class="dash">—</td><td class="highlight check">✓</td><td class="check">✓</td></tr>
+        <tr><td>QuickBooks sync</td><td class="dash">—</td><td class="dash highlight">Coming Soon</td><td>Coming Soon</td></tr>
+
+        <tr><td class="table-group-header" colspan="4">Marketing & Growth</td></tr>
+        <tr><td>Automated quote follow-ups</td><td class="dash">—</td><td class="highlight check">✓</td><td class="check">✓</td></tr>
+        <tr><td>Email campaigns</td><td class="dash">—</td><td class="highlight check">✓</td><td class="check">✓</td></tr>
+        <tr><td>Review requests</td><td class="dash">—</td><td class="highlight check">✓</td><td class="check">✓</td></tr>
+        <tr><td>Marketing Suite</td><td class="dash">—</td><td class="dash highlight">—</td><td class="check">✓</td></tr>
+        <tr><td>Custom branding</td><td class="dash">—</td><td class="dash highlight">—</td><td class="check">✓</td></tr>
+        <tr><td>Bulk operations</td><td class="dash">—</td><td class="dash highlight">—</td><td class="check">✓</td></tr>
+
+        <tr><td class="table-group-header" colspan="4">AI & Roadmap</td></tr>
+        <tr><td>Scaffld AI</td><td class="dash">—</td><td class="dash highlight">—</td><td>Coming Soon</td></tr>
+        <tr><td>AI Receptionist</td><td class="dash">—</td><td class="dash highlight">—</td><td>Coming Soon</td></tr>
+        <tr><td>GPS fleet tracking</td><td class="dash">—</td><td class="dash highlight">—</td><td>Coming Soon</td></tr>
 
         <tr><td class="table-group-header" colspan="4">Support</td></tr>
         <tr><td>Email & chat support</td><td class="check">✓</td><td class="highlight check">✓</td><td class="check">✓</td></tr>

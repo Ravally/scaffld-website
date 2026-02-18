@@ -471,6 +471,24 @@ img{max-width:100%;display:block}a{text-decoration:none;color:inherit}button{cur
   background: none;
 }
 
+/* Coming Soon badge */
+.coming-soon-badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-data);
+  font-size: 0.52rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: rgba(107,127,150,0.1);
+  padding: 3px 8px;
+  border-radius: 100px;
+  font-weight: 500;
+  margin-left: 6px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
 /* ============================================
    FEATURES OVERVIEW GRID
    ============================================ */
@@ -590,12 +608,13 @@ img{max-width:100%;display:block}a{text-decoration:none;color:inherit}button{cur
       <div class="feature-row-content reveal">
         <div class="feature-row-badge teal">📋 Scheduling & Dispatch</div>
         <h2>Your whole crew,<br/>one calendar</h2>
-        <p>Drag-and-drop scheduling with real-time crew availability. Route optimization keeps your team moving. Automated dispatch notifications mean nobody's left guessing.</p>
+        <p>Calendar scheduling with real-time crew availability. Route planning keeps your team organized. Automated reminders mean nobody's left guessing.</p>
         <ul class="feature-row-bullets">
-          <li><span class="bullet-check teal">✓</span>Color-coded drag-and-drop calendar</li>
-          <li><span class="bullet-check teal">✓</span>Route optimization to cut drive time</li>
+          <li><span class="bullet-check teal">✓</span>Color-coded calendar with day, week & month views</li>
+          <li><span class="bullet-check teal">✓</span>Route planning with map view</li>
           <li><span class="bullet-check teal">✓</span>Automated crew notifications & reminders</li>
           <li><span class="bullet-check teal">✓</span>Online booking from your website</li>
+          <li><span class="bullet-check teal">✓</span>Geofencing — auto-alerts when crew arrives at or leaves a job site</li>
         </ul>
         <a href="https://my.scaffld.app/signup" class="btn btn-primary btn-arrow">Try Scheduling Free </a>
       </div>
@@ -639,12 +658,13 @@ img{max-width:100%;display:block}a{text-decoration:none;color:inherit}button{cur
       <div class="feature-row-content reveal">
         <div class="feature-row-badge coral">💰 Invoicing & Payments</div>
         <h2>Get paid before you<br/>leave the driveway</h2>
-        <p>One-tap invoicing from the job site. Automated reminders chase the money so you don't have to. Online payments mean cash in your account — on average 4× faster.</p>
+        <p>One-tap invoicing from the job site. Automated reminders chase the money so you don't have to. Online payments via Stripe mean you get paid faster.</p>
         <ul class="feature-row-bullets">
           <li><span class="bullet-check coral">✓</span>One-tap invoicing from the field</li>
           <li><span class="bullet-check coral">✓</span>Automated follow-up reminders</li>
-          <li><span class="bullet-check coral">✓</span>Online credit card & ACH payments</li>
-          <li><span class="bullet-check coral">✓</span>Instant payouts to your bank</li>
+          <li><span class="bullet-check coral">✓</span>Online payments via Stripe Checkout</li>
+          <li><span class="bullet-check coral">✓</span>Payment plans with scheduled installments</li>
+          <li><span class="bullet-check coral">✓</span>Sequential invoice numbering</li>
         </ul>
         <a href="https://my.scaffld.app/signup" class="btn btn-primary btn-arrow">Try Invoicing Free </a>
       </div>
@@ -688,9 +708,10 @@ img{max-width:100%;display:block}a{text-decoration:none;color:inherit}button{cur
         <p>Complete client profiles with job history, billing records, notes, and photos. Your crew has context before they arrive. Your office has answers before they ask.</p>
         <ul class="feature-row-bullets">
           <li><span class="bullet-check teal">✓</span>Full client history & job records</li>
-          <li><span class="bullet-check teal">✓</span>Automated lead tracking & tagging</li>
+          <li><span class="bullet-check teal">✓</span>Lead tracking & client tagging</li>
           <li><span class="bullet-check teal">✓</span>Client self-serve portal (Client Hub)</li>
-          <li><span class="bullet-check teal">✓</span>Two-way SMS & email communication</li>
+          <li><span class="bullet-check teal">✓</span>SMS notifications & email communication</li>
+          <li><span class="bullet-check teal">✓</span>Online booking page for client requests</li>
         </ul>
         <a href="https://my.scaffld.app/signup" class="btn btn-primary btn-arrow">Try CRM Free </a>
       </div>
@@ -730,12 +751,13 @@ img{max-width:100%;display:block}a{text-decoration:none;color:inherit}button{cur
       <div class="feature-row-content reveal">
         <div class="feature-row-badge amber">📊 Reporting & Insights</div>
         <h2>Know your numbers<br/>at a glance</h2>
-        <p>Revenue projections, crew efficiency, job profitability, and expense tracking — all in real-time dashboards built for business owners, not accountants.</p>
+        <p>Revenue tracking, crew efficiency, job profitability, and expense tracking — all in real-time dashboards built for business owners, not accountants.</p>
         <ul class="feature-row-bullets">
-          <li><span class="bullet-check amber">✓</span>20+ built-in business reports</li>
-          <li><span class="bullet-check amber">✓</span>Revenue heatmap by service area</li>
+          <li><span class="bullet-check amber">✓</span>Business reports & dashboards</li>
           <li><span class="bullet-check amber">✓</span>Job profitability tracking</li>
-          <li><span class="bullet-check amber">✓</span>QuickBooks Online sync</li>
+          <li><span class="bullet-check amber">✓</span>Payroll export to Xero, MYOB, QuickBooks, Gusto & CSV</li>
+          <li><span class="bullet-check amber">✓</span>Revenue heatmap by service area <span class="coming-soon-badge">Coming Soon</span></li>
+          <li><span class="bullet-check amber">✓</span>QuickBooks & Xero direct sync <span class="coming-soon-badge">Coming Soon</span></li>
         </ul>
         <a href="https://my.scaffld.app/signup" class="btn btn-primary btn-arrow">Try Reporting Free </a>
       </div>
@@ -777,16 +799,16 @@ img{max-width:100%;display:block}a{text-decoration:none;color:inherit}button{cur
   <div class="container">
     <div class="feature-row">
       <div class="feature-row-content reveal">
-        <div class="feature-row-badge coral">🤖 Scaffld AI</div>
+        <div class="feature-row-badge coral">🤖 Scaffld AI <span class="coming-soon-badge">Coming Soon</span></div>
         <h2>Your smartest<br/>crew member</h2>
-        <p>Let AI answer customer calls 24/7, draft quotes, generate email campaigns, and flag upsell opportunities. Your crew stays in the field — not on the phone.</p>
+        <p>We're building AI tools to help you work faster — from drafting quotes to answering customer calls. Scale plan members get first access as features roll out.</p>
         <ul class="feature-row-bullets">
-          <li><span class="bullet-check coral">✓</span>AI Receptionist — answers calls 24/7</li>
-          <li><span class="bullet-check coral">✓</span>Voice commands from the job site</li>
-          <li><span class="bullet-check coral">✓</span>Auto-generated email campaigns</li>
-          <li><span class="bullet-check coral">✓</span>Smart quote suggestions</li>
+          <li><span class="bullet-check coral">✓</span>AI Receptionist — answers calls 24/7 <span class="coming-soon-badge">Coming Soon</span></li>
+          <li><span class="bullet-check coral">✓</span>Voice commands from the job site <span class="coming-soon-badge">Coming Soon</span></li>
+          <li><span class="bullet-check coral">✓</span>AI-powered email campaigns <span class="coming-soon-badge">Coming Soon</span></li>
+          <li><span class="bullet-check coral">✓</span>Smart quote suggestions <span class="coming-soon-badge">Coming Soon</span></li>
         </ul>
-        <a href="https://my.scaffld.app/signup" class="btn btn-primary btn-arrow">Try Scaffld AI Free </a>
+        <a href="https://my.scaffld.app/signup" class="btn btn-primary btn-arrow">Get Early Access </a>
       </div>
       <div class="feature-row-visual reveal reveal-delay-2">
         <div class="feature-mockup-card">
@@ -822,18 +844,22 @@ img{max-width:100%;display:block}a{text-decoration:none;color:inherit}button{cur
       <h2 class="section-title reveal reveal-delay-1">Every feature your<br/>business needs</h2>
     </div>
     <div class="overview-grid reveal">
+      <div class="overview-item"><div class="overview-icon">🔄</div><h4>Offline Mode</h4><p>Works without internet — syncs automatically</p></div>
+      <div class="overview-item"><div class="overview-icon">📍</div><h4>GPS Time Tracking</h4><p>Location stamps on clock-in/out</p></div>
+      <div class="overview-item"><div class="overview-icon">📝</div><h4>Form Builder</h4><p>Custom checklists with 8+ field types</p></div>
+      <div class="overview-item"><div class="overview-icon">📸</div><h4>Photo Markup</h4><p>Annotate job site photos on the spot</p></div>
+      <div class="overview-item"><div class="overview-icon">📍</div><h4>Geofencing</h4><p>Auto-alerts on job site arrival</p></div>
       <div class="overview-item"><div class="overview-icon">🗓️</div><h4>Online Booking</h4><p>Let clients book directly from your site</p></div>
-      <div class="overview-item"><div class="overview-icon">📍</div><h4>GPS Tracking</h4><p>See your whole crew in real-time</p></div>
-      <div class="overview-item"><div class="overview-icon">📸</div><h4>Job Site Photos</h4><p>Before/after shots attached to every job</p></div>
       <div class="overview-item"><div class="overview-icon">⏱️</div><h4>Time Tracking</h4><p>Crew clock-in/out from the app</p></div>
       <div class="overview-item"><div class="overview-icon">💬</div><h4>On-My-Way Texts</h4><p>One-tap ETA alerts to clients</p></div>
-      <div class="overview-item"><div class="overview-icon">📧</div><h4>Email Campaigns</h4><p>Automated re-engagement emails</p></div>
-      <div class="overview-item"><div class="overview-icon">⭐</div><h4>Review Requests</h4><p>Auto-request Google reviews post-job</p></div>
-      <div class="overview-item"><div class="overview-icon">🔗</div><h4>Integrations</h4><p>QuickBooks, Mailchimp, Zapier & more</p></div>
-      <div class="overview-item"><div class="overview-icon">📝</div><h4>Job Forms</h4><p>Custom checklists & inspection forms</p></div>
-      <div class="overview-item"><div class="overview-icon">💳</div><h4>Card Reader</h4><p>Accept payments on-site with a tap</p></div>
+      <div class="overview-item"><div class="overview-icon">📧</div><h4>Email Campaigns</h4><p>Targeted emails to client segments</p></div>
+      <div class="overview-item"><div class="overview-icon">⭐</div><h4>Review Requests</h4><p>Auto-request reviews post-job</p></div>
+      <div class="overview-item"><div class="overview-icon">💳</div><h4>Payment Plans</h4><p>Split invoices into installments</p></div>
       <div class="overview-item"><div class="overview-icon">🏷️</div><h4>Expense Tracking</h4><p>Log expenses & receipts per job</p></div>
-      <div class="overview-item"><div class="overview-icon">🌐</div><h4>Website Builder</h4><p>SEO-ready site in minutes</p></div>
+      <div class="overview-item"><div class="overview-icon">💰</div><h4>Payroll Export</h4><p>Export to Xero, MYOB, Gusto & more</p></div>
+      <div class="overview-item"><div class="overview-icon">🔔</div><h4>Push Notifications</h4><p>Real-time alerts with deep linking</p></div>
+      <div class="overview-item"><div class="overview-icon">✉️</div><h4>Email Templates</h4><p>9 customizable templates built in</p></div>
+      <div class="overview-item"><div class="overview-icon">🔗</div><h4>Integrations</h4><p>Stripe, Google Maps & more</p></div>
     </div>
   </div>
 </section>

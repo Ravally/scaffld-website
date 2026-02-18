@@ -177,6 +177,22 @@ img{max-width:100%;display:block}a{text-decoration:none;color:inherit}button{cur
 .integration-category.built { background: rgba(14,165,160,0.08); color: var(--primary); }
 .integration-category.available { background: rgba(255,170,92,0.08); color: var(--amber-deep); }
 .integration-category.coming-soon { background: rgba(107,127,150,0.08); color: var(--muted); }
+.coming-soon-badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-data);
+  font-size: 0.52rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: rgba(107,127,150,0.1);
+  padding: 3px 8px;
+  border-radius: 100px;
+  font-weight: 500;
+  margin-left: 6px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
 .integration-desc { font-size: 0.85rem; color: var(--muted); line-height: 1.6; font-weight: 300; }
 
 /* ============================================
@@ -309,9 +325,9 @@ img{max-width:100%;display:block}a{text-decoration:none;color:inherit}button{cur
 
       <div class="integration-card reveal">
         <div class="integration-emoji">📊</div>
-        <div class="integration-category built">Accounting</div>
-        <div class="integration-name">QuickBooks</div>
-        <div class="integration-desc">Sync invoices, payments, and customer records automatically. Your books stay current without the data entry.</div>
+        <div class="integration-category available">Accounting</div>
+        <div class="integration-name">QuickBooks <span class="coming-soon-badge">Coming Soon</span></div>
+        <div class="integration-desc">Direct invoice and payment sync. Timesheet export to QuickBooks format is available now.</div>
       </div>
 
       <div class="integration-card reveal reveal-delay-1">
@@ -346,21 +362,28 @@ img{max-width:100%;display:block}a{text-decoration:none;color:inherit}button{cur
         <div class="integration-emoji">🗺️</div>
         <div class="integration-category built">Routing</div>
         <div class="integration-name">Google Maps</div>
-        <div class="integration-desc">Optimized directions, mileage tracking, and GPS crew location — all built in.</div>
+        <div class="integration-desc">Address autocomplete, job site mapping, and one-tap navigation to your next job.</div>
       </div>
 
       <div class="integration-card reveal reveal-delay-2">
         <div class="integration-emoji">📈</div>
         <div class="integration-category available">Accounting</div>
-        <div class="integration-name">Xero</div>
-        <div class="integration-desc">Alternative to QuickBooks. Full invoice and payment sync for Xero users.</div>
+        <div class="integration-name">Xero <span class="coming-soon-badge">Coming Soon</span></div>
+        <div class="integration-desc">Direct invoice sync for Xero users. Timesheet export to Xero format is available now.</div>
       </div>
 
       <div class="integration-card reveal reveal-delay-3">
         <div class="integration-emoji">📱</div>
-        <div class="integration-category built">Communications</div>
-        <div class="integration-name">Twilio</div>
-        <div class="integration-desc">SMS notifications, on-my-way texts, and appointment reminders powered by Twilio.</div>
+        <div class="integration-category coming-soon">Communications</div>
+        <div class="integration-name">Twilio SMS <span class="coming-soon-badge">Coming Soon</span></div>
+        <div class="integration-desc">Server-side SMS notifications and appointment reminders. Currently, SMS opens your native messaging app.</div>
+      </div>
+
+      <div class="integration-card reveal">
+        <div class="integration-emoji">📬</div>
+        <div class="integration-category built">Email</div>
+        <div class="integration-name">SendGrid</div>
+        <div class="integration-desc">Transactional emails for quotes, invoices, reminders, and campaigns. Reliable delivery built in.</div>
       </div>
 
       <div class="integration-card reveal">
