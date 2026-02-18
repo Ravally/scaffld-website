@@ -17,6 +17,10 @@
     { "source": "/terms", "destination": "/terms.html" },
     { "source": "/mobile-app", "destination": "/mobile-app.html" },
     { "source": "/integrations", "destination": "/integrations.html" },
-    { "source": "/careers", "destination": "/careers.html" }
+    { "source": "/careers", "destination": "/careers.html" },
+    { "source": "/help-center", "destination": "/help-center.html" },
+    { "source": "/academy", "destination": "/academy.html" },
+    { "source": "/blog", "destination": "/blog.html" },
+    { "source": "/free-tools", "destination": "/free-tools.html" }
   ]
 }
