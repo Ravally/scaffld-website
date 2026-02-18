@@ -14,6 +14,9 @@
   ],
   "rewrites": [
     { "source": "/privacy", "destination": "/privacy.html" },
-    { "source": "/terms", "destination": "/terms.html" }
+    { "source": "/terms", "destination": "/terms.html" },
+    { "source": "/mobile-app", "destination": "/mobile-app.html" },
+    { "source": "/integrations", "destination": "/integrations.html" },
+    { "source": "/careers", "destination": "/careers.html" }
   ]
 }
