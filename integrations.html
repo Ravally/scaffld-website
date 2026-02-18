@@ -70,7 +70,7 @@ img{max-width:100%;display:block}a{text-decoration:none;color:inherit}button{cur
 .nav-cta-group{display:flex;align-items:center;gap:1rem}
 .nav-login{font-size:0.9rem;font-weight:500;color:var(--slate);transition:color 0.2s}
 .nav-login:hover{color:var(--primary)}
-.nav-hamburger{display:none;flex-direction:column;gap:5px;background:none;padding:4px}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;background:none;padding:10px;min-width:44px;min-height:44px;justify-content:center;align-items:center}
 .nav-hamburger span{width:22px;height:2px;background:var(--midnight);border-radius:2px;transition:all 0.3s}
 .nav-mobile{display:none;position:fixed;inset:0;background:var(--cream);z-index:99;padding:100px 2rem 2rem;flex-direction:column;gap:0.5rem}
 .nav-mobile.open{display:flex}
@@ -82,7 +82,7 @@ img{max-width:100%;display:block}a{text-decoration:none;color:inherit}button{cur
 .btn-primary:hover{background:var(--primary-deep);transform:translateY(-2px);box-shadow:0 8px 30px rgba(14,165,160,0.35)}
 .btn-secondary{background:var(--white);color:var(--midnight);border:1.5px solid rgba(0,0,0,0.1)}
 .btn-secondary:hover{border-color:var(--primary);color:var(--primary);transform:translateY(-2px)}
-.btn-sm{padding:10px 20px;font-size:0.85rem}
+.btn-sm{padding:10px 20px;font-size:0.85rem;min-height:44px}
 .btn-lg{padding:18px 36px;font-size:1.05rem}
 .btn-arrow::after{content:'\2192';transition:transform 0.3s}.btn-arrow:hover::after{transform:translateX(4px)}
 .btn-outline-white{background:transparent;color:var(--white);border:1.5px solid rgba(255,255,255,0.2)}
@@ -273,6 +273,11 @@ img{max-width:100%;display:block}a{text-decoration:none;color:inherit}button{cur
   .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
   .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
 }
+@media(max-width:480px){
+  .cta-buttons{flex-direction:column;align-items:center;width:100%}
+  .cta-buttons .btn{width:100%;justify-content:center}
+  .btn-lg{padding:16px 24px;font-size:1rem}
+}
 </style>
 </head>
 <body>
@@ -302,6 +307,8 @@ img{max-width:100%;display:block}a{text-decoration:none;color:inherit}button{cur
 </nav>
 <div class="nav-mobile" id="mobile-nav">
   <a href="index.html">Home</a><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="industries.html">Industries</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+<a href="https://my.scaffld.app/login" style="color:var(--slate);border-bottom:none;margin-top:1rem;">Log in</a>
+<a href="https://my.scaffld.app/signup" style="color:var(--primary);border-bottom:none;">Start Free Trial →</a>
 </div>
 
 <!-- PAGE HERO -->
@@ -513,13 +520,16 @@ window.addEventListener('scroll', () => {
 
 const hamburger = document.getElementById('hamburger');
 const mobileNav = document.getElementById('mobile-nav');
+let menuOpen = false;
 hamburger.addEventListener('click', () => {
+  menuOpen = !menuOpen;
   mobileNav.classList.toggle('open');
   hamburger.classList.toggle('active');
 });
 mobileNav.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => { mobileNav.classList.remove('open'); hamburger.classList.remove('active'); });
+  link.addEventListener('click', () => { mobileNav.classList.remove('open'); hamburger.classList.remove('active'); menuOpen = false; });
 });
+document.addEventListener('click',function(e){if(menuOpen&&!mobileNav.contains(e.target)&&!hamburger.contains(e.target)){mobileNav.classList.remove('open');menuOpen=false;var s=hamburger.querySelectorAll('span');s[0].style.transform='';s[1].style.opacity='';s[2].style.transform=''}});
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
